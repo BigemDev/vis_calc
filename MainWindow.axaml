@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="700"
+        x:Class="Kalkulator.MainWindow"
+        Title="Kalkulator"
+        Width="850" Height="700"
+        >
+    <Grid RowDefinitions="Auto,*" ColumnDefinitions="*" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox x:Name="DisplayTextBox" Grid.Row="0" Margin="0,0,0,3" FontSize="80" TextAlignment="Right" IsReadOnly="True"/>
+        <Grid Grid.Row="1" ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*,*">
+            <Button Grid.Row="0" Grid.Column="0" Content="7" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="8" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="9" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="0" Grid.Column="3" Content="/" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="OperatorButton"/>
+            <Button Grid.Row="1" Grid.Column="0" Content="4" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="5" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="1" Grid.Column="2" Content="6" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="1" Grid.Column="3" Content="*" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="OperatorButton"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="1" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="2" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="2" Grid.Column="2" Content="3" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="-" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="OperatorButton"/>
+            <Button Grid.Row="3" Grid.Column="0" Content="0" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="NumberButton"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="." Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="DecimalButton"/>
+            <Button Grid.Row="3" Grid.Column="2" Content="=" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="EqualsButton"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="+" Height="100" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="80" Click="OperatorButton"/>
+            
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Content="Clear" FontSize="80" Click="ClearButton" Height="100" Width="800" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
